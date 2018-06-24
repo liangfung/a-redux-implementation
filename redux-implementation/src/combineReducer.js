@@ -1,5 +1,4 @@
-const combineReducer = (reducers) => { // combineReducer的参数，{reducerA, reducerB, ...rest}
-  return (state = {}, action) => {
+const combineReducer = reducers => (state = {}, action) => {// combineReducer的参数如{reducerA, reducerB, ...rest},返回一个新的reducer
     return Object.keys(reducers).reduce((nextState, key) => {
       nextState[key] = reducers[key](
         state[key],  // reducer的参数state
@@ -7,5 +6,4 @@ const combineReducer = (reducers) => { // combineReducer的参数，{reducerA, r
       );
       return nextState;
     }, {})
-  }
 }
