@@ -1,2 +1,2 @@
 # a-redux-implementation
-implement a redux
+implement a redux & a react-redux
