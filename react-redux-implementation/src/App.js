@@ -24,7 +24,7 @@ function createStore(reducer) {
 
 const themeReducer = (state, action) => {
   const initialState = {
-    themeColor: 'red'
+    themeColor: 'black'
   }
   if (!state) {
     return initialState;
