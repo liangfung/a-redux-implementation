@@ -30,6 +30,7 @@ import { connect } from './react-redux'
 // }
 
 function Header(props) {
+  console.log('header render')
   return (
     <div>
       <h1 style={{ color: props.themeColor }}>header</h1>
@@ -42,4 +43,5 @@ function mapStateToProps(state) {
   }
 }
 
+// export default Header
 export default connect(mapStateToProps)(Header)

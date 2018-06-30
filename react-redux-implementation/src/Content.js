@@ -8,7 +8,7 @@ class Content extends Component {
   }
 
   state = {
-    themeColor: ''
+    themeColor: 'red'
   }
 
   componentDidMount() {
